@@ -20,7 +20,8 @@ def retrieve():
     print("THERE ARE NO MORE RECORDS TO SHOW")
     input("PRESS ENTER TO CONTINUE")
 
-def ViewAll():
+    
+def viewAll():
     if len(EMP) == 0:
         print("THERE ARE NO RECORDS TO SHOW")
     else:
@@ -39,7 +40,7 @@ def delete():
             del EMP[i]
             flag = True
             print("Record was deleted")
-            ViewAll()
+            viewAll()
     if flag:
         pass
     else:
@@ -82,7 +83,7 @@ while isRunning:
     elif choice == '4':
         delete()
     elif choice == '5':
-        ViewAll()
+        viewAll()
     elif choice == '6':
         isRunning = False
     else:
